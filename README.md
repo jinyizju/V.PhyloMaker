@@ -24,5 +24,6 @@ The four data sets work with the functions to makes phylogenetic hypotheses for 
 
 ‘nodes.info.1’ and ‘nodes.info.2’ are the genus- and family-level node and age information in ‘GBOTB.extended’ extracted by ‘build.nodes.1’ and ‘build.nodes.2’, respectively.
 
+
 Citation:
 Jin Y & Qian H (2019) V.PhyloMaker: an R package that can generate very large phylogenies for vascular plants, Ecography, DOI: 10.1111/ecog.04434
