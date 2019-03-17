@@ -1,0 +1,12 @@
+Package: V.PhyloMaker
+Type: Package
+Title: Make phylogenetic hypotheses for vascular plants, etc.
+Version: 0.1.0
+Author: Yi Jin
+Maintainer: Yi Jin <codon@126.com>
+Depends: R (>= 3.4.0), ape
+Description: Make phylogenetic hypotheses as described in Jin & Qian (2019), written mainly for vascular plants, can be extended to other species group if proper backbone phylogeny is provided. 
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+
