@@ -1,4 +1,4 @@
-  zzphylo.maker <-
+phylo.maker.FullName <-
   function (sp.list, tree = GBOTB.extended, nodes = nodes.info.1, 
             output.sp.list = TRUE, output.tree = FALSE, scenarios = "S3", 
             r = 1) 
