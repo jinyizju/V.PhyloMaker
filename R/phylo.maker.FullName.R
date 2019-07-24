@@ -10,14 +10,11 @@ phylo.maker.FullName <-
     dimnames(sp.list)[[2]][1:3] <- c("species", "genus", "family")
     sp.list[sapply(sp.list, is.factor)] <- lapply(sp.list[sapply(sp.list, 
                                                                  is.factor)], as.character)
-    #return(sp.list)
     sp.list$mergeid = paste( sp.list$family, sp.list$genus, sp.list$species, sep = '_' )
     if (any(duplicated( sp.list$mergeid  ))) {
       print("Duplicated species detected and removed.")
-      print(4444)
       print(sp.list$species[duplicated(sp.list$mergeid)])
     }
-    #return(0)
     sp.list <- sp.list[!duplicated(sp.list$mergeid), ]
     sp.list.original <- sp.list
     sp.list$species <- gsub(" ", "_", sp.list$species)
