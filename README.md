@@ -28,4 +28,4 @@ The four data sets work with the functions to make phylogenetic hypotheses for a
 
 
 Citation:
-Jin Y & Qian H (2019) V.PhyloMaker: an R package that can generate very large phylogenies for vascular plants, Ecography, DOI: 10.1111/ecog.04434
+Jin Y & Qian H (2019) V.PhyloMaker: an R package that can generate very large phylogenies for vascular plants. Ecography, 42, 1353–1359.
