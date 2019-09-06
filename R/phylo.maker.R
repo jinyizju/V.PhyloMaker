@@ -1,7 +1,7 @@
 phylo.maker <-
 function (sp.list, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list = TRUE, output.tree = FALSE, scenarios = "S3", r = 1)
 {
-  options(scipen = 999)
+  # options(scipen = 999)
   treeX <- tree
   if (is.null(tree$node.labels))
     tree$node.label <- rep("", tree$Nnode)
