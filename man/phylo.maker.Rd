@@ -35,7 +35,7 @@ A list of,
   \item{scenario.1 }{The phylogeny of the user specified list of species built under scenario 1.}
   \item{scenario.2 }{A list of phylogenies of the user specified list of species built under scenario 2.}
   \item{scenario.3 }{The phylogeny of the user specified list of species built under scenario 3.}
-  \item{species.list }{Optional. The user specified list of species with a column at the end indicating of each species status of "prune", "bind" or "fail  to bind" to the backbone phylogeny. The default is TRUE.}
+  \item{species.list }{Optional. The default is TRUE. The user specified list of species with a column at the end indicating of each species status of "prune", "bind" or "fail to bind" to the backbone phylogeny. Specifically, species matched between the species.list and the backbone phylogeny are indicated as "prune"; species absent from the backbone phylogeny, but were successfully binded to the backbone phylogeny are indicated as "bind"; species absent from the backbone phylogeny and failed to be binded to the backbone phylogeny are indicated as  "fail to bind".}
   \item{tree.scenario.1 }{Optional. The backbone phylogeny that has incorporated the species in the user specified species list built under scenario 1. The default is FALSE.}
   \item{tree.scenario.2 }{Optional. A list of the backbone phylogenies that has incorporated the species in the user specified species list built under scenario 2. The default is FALSE.}
   \item{tree.scenario.3 }{Optional. The backbone phylogeny that has incorporated the species in the user specified species list built under scenario 3. The default is FALSE.}

@@ -1,7 +1,7 @@
 build.nodes.2 <-
 function(tree, tips)
 {
-  options(stringsAsFactors = FALSE)
+  tips <- data.frame(as.matrix(tips), stringsAsFactors = FALSE)
   tips$species <- gsub("(^[[:alpha:]])", "\\U\\1", tips$species, perl = TRUE)
   tips$genus <- gsub("(^[[:alpha:]])", "\\U\\1", tips$genus, perl = TRUE)
   tips$family <- gsub("(^[[:alpha:]])", "\\U\\1", tips$family, perl = TRUE)
@@ -30,10 +30,10 @@ function(tree, tips)
           Fn1$bn.bl[i] <- tree$edge.length[x1]
         }
     }
-  if (dim(Fn1)[1] == 0) 
+  if (dim(Fn1)[1] == 0)
     {
       Fn1 <- NULL
-    } 
+    }
   tF <- tree
   tF$tip.label <- tips$family
   n1 <- which(!duplicated(tF$tip.label))
@@ -65,7 +65,7 @@ function(tree, tips)
             }
         }
     }
-  if (dim(Fn2)[1] == 0) 
+  if (dim(Fn2)[1] == 0)
     {
       Fn2 <- NULL
     }
@@ -93,7 +93,7 @@ function(tree, tips)
   if (dim(Gn1)[1] == 0)
     {
       Gn1 <- NULL
-    } 
+    }
   tG <- tree
   tG$tip.label <- tips$genus
   n1 <- which(!duplicated(tG$tip.label))
@@ -121,8 +121,8 @@ function(tree, tips)
           if (n == min(tree$edge[,1]))
             {
               Gn2$rn[i] <- Gn2$bn[i]
-              Gn2$rn.bl[i] <- Gn2$bn.bl[i]        
-            } 
+              Gn2$rn.bl[i] <- Gn2$bn.bl[i]
+            }
         }
     }
   if (dim(Gn2)[1] == 0)

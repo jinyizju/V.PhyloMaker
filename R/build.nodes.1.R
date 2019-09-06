@@ -1,7 +1,7 @@
 build.nodes.1 <-
 function(tree, tips)
 {
-  options(stringsAsFactors = FALSE)
+  tips <- data.frame(as.matrix(tips), stringsAsFactors = FALSE)
   dimnames(tips)[[2]] <- tolower(dimnames(tips)[[2]])
   tips$species <- gsub("(^[[:alpha:]])", "\\U\\1", tips$species, perl = TRUE)
   tips$genus <- gsub("(^[[:alpha:]])", "\\U\\1", tips$genus, perl = TRUE)
@@ -47,7 +47,7 @@ function(tree, tips)
     }
   if (dim(xF1)[1] == 0)
     {
-      Fn1 <- NULL    
+      Fn1 <- NULL
     }
   xF2 <- xF[xF$sizeF > 1, ]
   if (dim(xF2)[1] > 0)
@@ -147,8 +147,8 @@ function(tree, tips)
           if (n == min(tree$edge[,1]))
             {
               Gn2$rn[i] <- Gn2$bn[i]
-              Gn2$rn.bl[i] <- Gn2$bn.bl[i]        
-            } 
+              Gn2$rn.bl[i] <- Gn2$bn.bl[i]
+            }
         }
     }
   if (dim(xG2)[1] == 0)
