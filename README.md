@@ -1,7 +1,10 @@
 V.PhyloMaker
 
-
 This R package makes phylogenetic hypotheses for a user-specified list of species, by providing multiple ways of binding the species (tips) to a backbone phylogeny, as described in Jin & Qian (2019).
+
+How to install this package? 
+This package can be installed in R either using the install_github function in the ‘devtools’ package, or using the githubinstall function in the ‘githubinstall’ package. For example, the R code for installation of V.PhyloMaker using the ‘devtools’ package is as follows:
+devtools::install_github("jinyizju/V.PhyloMaker")
 
 Currently, this package includes two major components: (1) the functions, including ‘phylo.maker’, ‘bind.relative’, ‘build.nodes.1’, ‘build.nodes.2’, ‘at.node’, ‘int.node’ and ‘ext.node’; and (2) the data, including 'GBOTB.extended', ‘tips.info’, ‘nodes.info.1’ and ‘nodes.info.2’.
 
