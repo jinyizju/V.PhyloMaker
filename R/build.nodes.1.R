@@ -33,7 +33,7 @@ function(tree, tips)
   xF1 <- xF[xF$sizeF == 1, ]
   if (dim(xF1)[1] > 0)
     {
-      Fn1 <- data.frame(level = "F", family = xF1$family, genus = "", rn = "", rn.bl = 0, bn = "", bn.bl = 0, taxa = xF1$species)
+      Fn1 <- data.frame(level = "F", family = xF1$family, genus = "", rn = "", rn.bl = 0, bn = "", bn.bl = 0, taxa = xF1$species, stringsAsFactors = FALSE)
       for (i in 1 : dim(Fn1)[1])
         {
           x0 <- match(Fn1$taxa[i], tree$tip.label)
@@ -60,7 +60,7 @@ function(tree, tips)
       n2 <- length(tF$tip.label) + 1 - which(!duplicated(rev(tF$tip.label)))
       nn <- sort(unique(c(n1, n2)))
       tF <- drop.tip(tF, setdiff(1 : length(tF$tip.label), nn))
-      Fn2 <- data.frame(level = "F", family = xF2$family, genus = "", rn = "", rn.bl = 0, bn = "", bn.bl = 0, taxa = "")
+      Fn2 <- data.frame(level = "F", family = xF2$family, genus = "", rn = "", rn.bl = 0, bn = "", bn.bl = 0, taxa = "", stringsAsFactors = FALSE)
       x <- 1 : length(tF$tip.label)
       for (i in 1 : dim(Fn2)[1])
         {
@@ -102,7 +102,7 @@ function(tree, tips)
   xG1 <- xG[xG$sizeG == 1, ]
   if (dim(xG1)[1] > 0)
     {
-      Gn1 <- data.frame(level = "G", family = xG1$family, genus = xG1$genus, rn = "", rn.bl = 0, bn = "", bn.bl = 0, taxa = xG1$species)
+      Gn1 <- data.frame(level = "G", family = xG1$family, genus = xG1$genus, rn = "", rn.bl = 0, bn = "", bn.bl = 0, taxa = xG1$species, stringsAsFactors = FALSE)
       for (i in 1 : dim(Gn1)[1])
         {
           x0 <- match(Gn1$taxa[i], tree$tip.label)
@@ -129,7 +129,7 @@ function(tree, tips)
       n2 <- length(tG$tip.label) + 1 - which(!duplicated(rev(tG$tip.label)))
       nn <- sort(unique(c(n1, n2)))
       tG <- drop.tip(tG, setdiff(1:length(tG$tip.label), nn))
-      Gn2 <- data.frame(level = "G", family = xG2$family, genus = xG2$genus, rn = "", rn.bl = 0, bn = "", bn.bl = 0, taxa = "")
+      Gn2 <- data.frame(level = "G", family = xG2$family, genus = xG2$genus, rn = "", rn.bl = 0, bn = "", bn.bl = 0, taxa = "", stringsAsFactors = FALSE)
       x<-1 : length(tG$tip.label)
       for (i in 1 : dim(Gn2)[1])
         {
