@@ -64,7 +64,7 @@ function (sp.list, tree = GBOTB.extended, nodes = nodes.info.1,
             m <- data.frame(level = "G", family = nodes$family[n],
                 genus = sel.gen$genus[i], rn = nodes$bn[n], rn.bl = nodes$rn.bl[n],
                 bn = nodes$bn[n], bn.bl = nodes$bn.bl[n], gen.n = 1,
-                sp.n = 1, taxa = sel.gen$species[i])
+                sp.n = 1, taxa = sel.gen$species[i], stringsAsFactors = FALSE)
             nodesN <- rbind(nodesN, m)
             tree <- at.node(tree, x, sel.gen$species[i])
         }
