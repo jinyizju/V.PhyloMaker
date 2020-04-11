@@ -194,7 +194,7 @@ function (sp.list, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list =
                            node.label = nlabel, position = 1/2)
             x <- which(t2$node.label == nlabel)
             xx <- rbind(rnN2[1:(x - 1), ], data.frame(node.label = nlabel,
-                                                      oriN = ""))
+                                                      oriN = "", stringsAsFactors = FALSE))
             xx <- rbind(xx, rnN2[x:dim(rnN2)[1], ])
             rnN2 <- xx
             nG$sp.n[n0] <- nG$sp.n[n0] + 1
@@ -276,7 +276,7 @@ function (sp.list, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list =
           nF$sp.n[n] <- s + 1
           x <- which(t3$node.label == nlabel)
           xx <- rbind(rnN3[1:(x - 1), ], data.frame(node.label = nlabel,
-                                                    oriN = ""))
+                                                    oriN = "", stringsAsFactors = FALSE))
           xx <- rbind(xx, rnN3[x:dim(rnN3)[1], ])
           rnN3 <- xx
           nF$bn[n] <- nlabel
@@ -300,7 +300,7 @@ function (sp.list, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list =
             1
           x <- which(t3$node.label == nlabel)
           xx <- rbind(rnN3[1:(x - 1), ], data.frame(node.label = nlabel,
-                                                    oriN = ""))
+                                                    oriN = "", stringsAsFactors = FALSE))
           xx <- rbind(xx, rnN3[x:dim(rnN3)[1], ])
           rnN3 <- xx
           nG$bn[match(data$genus[i], nG$genus)] <- nlabel
@@ -324,7 +324,7 @@ function (sp.list, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list =
           nG$sp.n[n0] <- nG$sp.n[n0] + 1
           x <- which(t3$node.label == nlabel)
           xx <- rbind(rnN3[1:(x - 1), ], data.frame(node.label = nlabel,
-                                                    oriN = ""))
+                                                    oriN = "", stringsAsFactors = FALSE))
           xx <- rbind(xx, rnN3[x:dim(rnN3)[1], ])
           rnN3 <- xx
           nG$bn[n0] <- nlabel
