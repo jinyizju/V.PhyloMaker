@@ -18,7 +18,7 @@ function(tree, tips)
   Fn1 <- Fn[Fn$sp.n == 1, ]
   if (dim(Fn1)[1] > 0)
     {
-      Fn1 <- data.frame(level = "F", family = Fn1$family, genus = "", rn = "", rn.bl = 0, bn = "", bn.bl = 0, gen.n = Fn1$gen.n, sp.n = Fn1$sp.n, taxa = Fn1$species)
+      Fn1 <- data.frame(level = "F", family = Fn1$family, genus = "", rn = "", rn.bl = 0, bn = "", bn.bl = 0, gen.n = Fn1$gen.n, sp.n = Fn1$sp.n, taxa = Fn1$species, stringsAsFactors = FALSE)
       for (i in 1 : dim(Fn1)[1])
         {
           x0 <- match(Fn1$taxa[i], tree$tip.label)
@@ -43,7 +43,7 @@ function(tree, tips)
   Fn2 <- Fn[Fn$sp.n > 1, ]
   if (dim(Fn2)[1] > 0)
     {
-      Fn2 <- data.frame(level = "F", family = Fn2$family, genus = "", rn = "", rn.bl = 0, bn = "", bn.bl = 0, gen.n = Fn2$gen.n, sp.n = Fn2$sp.n, taxa = "")
+      Fn2 <- data.frame(level = "F", family = Fn2$family, genus = "", rn = "", rn.bl = 0, bn = "", bn.bl = 0, gen.n = Fn2$gen.n, sp.n = Fn2$sp.n, taxa = "", stringsAsFactors = FALSE)
       x <- 1 : length(tF$tip.label)
       for (i in 1:dim(Fn2)[1])
         {
@@ -78,7 +78,7 @@ function(tree, tips)
   Gn1 <- Gsn[Gsn$sp.n == 1, ]
   if (dim(Gn1)[1] > 0)
     {
-      Gn1 <- data.frame(level = "G", family = Gn1$family, genus = Gn1$genus, rn = "", rn.bl = 0, bn = "", bn.bl = 0, gen.n = Gn1$gen.n, sp.n = Gn1$sp.n, taxa = Gn1$species)
+      Gn1 <- data.frame(level = "G", family = Gn1$family, genus = Gn1$genus, rn = "", rn.bl = 0, bn = "", bn.bl = 0, gen.n = Gn1$gen.n, sp.n = Gn1$sp.n, taxa = Gn1$species, stringsAsFactors = FALSE)
       for (i in 1 : dim(Gn1)[1])
         {
           x0 <- match(Gn1$taxa[i], tree$tip.label)
@@ -103,7 +103,7 @@ function(tree, tips)
   Gn2 <- Gsn[Gsn$sp.n > 1, ]
   if (dim(Gn2)[1] > 0)
     {
-      Gn2 <- data.frame(level = "G", family = Gn2$family, genus = Gn2$genus, rn = "", rn.bl = 0, bn = "", bn.bl = 0, gen.n = Gn2$gen.n, sp.n = Gn2$sp.n, taxa = "")
+      Gn2 <- data.frame(level = "G", family = Gn2$family, genus = Gn2$genus, rn = "", rn.bl = 0, bn = "", bn.bl = 0, gen.n = Gn2$gen.n, sp.n = Gn2$sp.n, taxa = "", stringsAsFactors = FALSE)
       x <- 1 : length(tG$tip.label)
       for (i in 1 : dim(Gn2)[1])
         {
