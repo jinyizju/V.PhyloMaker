@@ -31,4 +31,6 @@ The four data sets work with the functions to make phylogenetic hypotheses for a
 
 
 Citation:
-Jin Y & Qian H (2019) V.PhyloMaker: an R package that can generate very large phylogenies for vascular plants. Ecography, 42, 1353–1359.
+Jin, Yi, and Hong Qian. 2019. V.PhyloMaker: an R package that can generate very large phylogenies for vascular plants. Ecography 42: 1353–1359. doi: 10.1111/ecog.04434
+Smith, Stephen A. and Joseph W. Brown. 2018. Constructing a broadly inclusive seed plant phylogeny. American Journal of Botany 105(3): 302-314. doi: 10.1002/ajb2.1019
+Zanne, Amy E., David C. Tank, William K. Cornwell, Jonathan M. Eastman, Stephen A. Smith, Richard G. FitzJohn, Daniel J. McGlinn, Brian C. O’Meara, Angela T. Moles, Peter B. Reich, Dana L. Royer, Douglas E. Soltis, Peter F. Stevens, Mark Westoby, Ian J. Wright, Lonnie Aarssen, Robert I. Bertin, Andre Calaminus, Rafaël Govaerts, Frank Hemmings, Michelle R. Leishman, Jacek Oleksyn, Pamela S. Soltis, Nathan G. Swenson, Laura Warman, Jeremy M. Beaulieu. 2014. Three keys to the radiation of angiosperms into freezing environments. Nature, 506(7486): 89-92. doi: 10.1038/nature12872
