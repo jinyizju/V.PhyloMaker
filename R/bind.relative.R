@@ -26,7 +26,7 @@ function (sp.list, tree = GBOTB.extended, nodes = nodes.info.1,
     sp.list$genus.relative <- gsub("(^[[:alpha:]])", "\\U\\1",
         sp.list$genus.relative, perl = TRUE)
     oriN <- tree$node.label
-    tree$node.label <- paste("N", 1:tree$Nnode, sep =  "")
+    tree$node.label <- paste("N", 1:tree$Nnode, sep = "")
     add <- sp.list[which(is.na(match(sp.list$species, tree$tip.label))),
         ]
     if (dim(add)[1] == 0 & length(na.omit(match(sp.list$species,
