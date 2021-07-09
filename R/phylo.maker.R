@@ -3,7 +3,7 @@ function (sp.list, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list =
 {
   # options(scipen = 999)
   treeX <- tree
-  if (is.null(tree$node.labels))
+  if (is.null(tree$node.label))
     tree$node.label <- rep("", tree$Nnode)
   dimnames(sp.list)[[2]][1:3] <- c("species", "genus", "family")
   sp.list[sapply(sp.list, is.factor)] <- lapply(sp.list[sapply(sp.list,
